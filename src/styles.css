@@ -1,0 +1,31 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+}
+
+.App {
+  font-family: Josefin Sans;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  gap: 16px;
+}
+
+.span-container {
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 52px;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.span-letters {
+  display: inline-flex;
+}
