@@ -21,12 +21,12 @@ const item = {
 };
 
 type AnimatedSpanType = {
-  text: string[];
+  text: string;
 };
 
 export default function TextRevel() {
   const headerOne = "Hello";
-  const headerTwo = "World 😍";
+  const headerTwo = "World";
 
   const AnimatedTextSpan = ({ text }: AnimatedSpanType) => (
     <motion.span
@@ -35,7 +35,7 @@ export default function TextRevel() {
       initial="hidden"
       animate="show"
     >
-      {[...text].map((letters, index) => (
+      {text.split('').map((letters, index) => (
         <motion.span key={index} className="span-letters" variants={item}>
           {letters}
         </motion.span>
@@ -44,8 +44,8 @@ export default function TextRevel() {
   );
   return (
     <motion.div variants={container} className="App">
-      <AnimatedTextSpan text={[...headerOne]} />
-      <AnimatedTextSpan text={[...headerTwo]} />
+      <AnimatedTextSpan text={headerOne} />
+      <AnimatedTextSpan text={headerTwo} />
     </motion.div>
   );
 }
