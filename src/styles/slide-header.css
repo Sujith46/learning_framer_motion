@@ -1,0 +1,19 @@
+.slide-header {
+    padding: 20px 24px 24px 24px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-bottom: 1px solid #0000000d;
+    width: fit-content;
+}
+.slide-header__number {
+    font-size: 16px;
+}
+
+.slide-header__title {
+    color:orangered;
+    font-size: 44px;
+}

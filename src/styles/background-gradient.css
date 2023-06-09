@@ -1,0 +1,21 @@
+.gradient {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+
+.bg-shape {
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.bg-blur {
+  filter: blur(190px);
+}

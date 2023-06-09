@@ -2,17 +2,23 @@ html,
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: black;
+  background-color: #efefef;
+  scroll-behavior: smooth;
 }
 
 .App {
   font-family: Josefin Sans;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+}
+
+.text-reveal {
   display: grid;
   place-content: center;
   gap: 16px;
+  width: inherit;
+  height: auto;
 }
 
 .span-container {
@@ -20,7 +26,7 @@ body {
   font-weight: normal;
   line-height: 52px;
   font-weight: bold;
-  color: white;
+  color: #201e1e;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -28,4 +34,15 @@ body {
 
 .span-letters {
   display: inline-flex;
+}
+
+.grid-container {
+  height: 100%;
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+}
+
+.content {
+  width: 100%;
 }

@@ -43,7 +43,7 @@ export default function TextRevel() {
     </motion.span>
   );
   return (
-    <motion.div variants={container} className="App">
+    <motion.div variants={container} className="text-reveal">
       <AnimatedTextSpan text={headerOne} />
       <AnimatedTextSpan text={headerTwo} />
     </motion.div>
