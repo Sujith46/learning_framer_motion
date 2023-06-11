@@ -16,7 +16,7 @@
   position: sticky;
   z-index: 1;
   top: 20px;
-  gap: 4px;
+  gap: 8px;
 }
 
 .sidebar-links {
@@ -26,6 +26,19 @@
   border-radius: 8px;
   transition: 0.3s ease-in;
   opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-links .icon {
+  visibility: hidden;
+  transition: 0.3 ease;
+}
+
+.sidebar-links:hover .icon {
+  visibility: visible;
+  
 }
 
 .sidebar-links:hover {

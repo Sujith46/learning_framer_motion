@@ -17,7 +17,7 @@ export default function App() {
           menu={components.map((item) => item.title)}
           active={currentComponentTitle}
         />
-        <BackgroundGradient color="#fc4400" />
+        {/* <BackgroundGradient color="#fc4400" /> */}
         <div className="content">
           <SlideHeader
             number={currentComponentIndex + 1}
